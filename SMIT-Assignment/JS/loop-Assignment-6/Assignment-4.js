@@ -62,7 +62,7 @@ switch(userInput){
 }
 // Q8
 var time = prompt("Enter the time")
-if(time >= 0000 && time < 1200){
+if(time >= 0 && time < 1200){
     console.log("Good morning")
 } else if(time >= 1200 && time < 1700){
     console.log("Good afternoon")
