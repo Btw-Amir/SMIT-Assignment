@@ -101,82 +101,93 @@ for (var i = 0; i<A.length; i++){
 console.log("The smallest number is "+b)
 
 // Q12
+for(i=5; i <= 100; i+=5){
+    document.write(i + " ")
+}
 // Q13
+var students = ["Ali","Sami","Taha","Inam"]
+var scores = [58,73,89,90]
+
+
+document.write(students[0] +" "+ scores[0] + "<br>")
+document.write(students[1] +" "+ scores[1] + "<br>")
+document.write(students[2] +" "+ scores[2] + "<br>")
+document.write(students[3] +" "+ scores[3])
 // Q14
+var scores = [12, 45, 3, 22, 34, 50]
+var stop = +prompt("Enter stop value")
+
+for (i = 0; i < scores.length; i++){
+
+
+}
+for(i = 0; i <= scores.indexOf(stop); i++){
+        document.write (scores[i] + " ")
+}
 // Q15
+var arr = [[1,2,3],[4,5,6],[7,8,9]]
+
+
+for (var i = 0; i < arr.length; i++){
+    nestedArray= arr[i]
+
+    var line = ''
+        for(var j =0; j< nestedArray.length; j++){
+
+            line += nestedArray[j]
+
+
+
+    }
+    console.log(line)
+}
 // Q16
+var userInput = prompt("Enter Number")
+for(i = userInput; i > 0; i-=0.5)
+document.write(i + ", ")
 // Q17
+for (i = 0; i <= 20; i++) {
+    if (i % 2 == 0) {
+        document.write(i + " is even" + "<br>")
+    }
+    else if (i % 1 == 0) {
+        document.write(i + " is odd" + "<br>")
+    }
+
+}
 // Q18
+var odd = 1
+
+for (i = 1; i <= 7; i+=2){
+     odd = odd * i
+}
+document.write("The Product of odd integars from 1 to 7 is " + odd)
 // Q19
+var userInput = prompt("Enter Initial Numbers Of Stars?.....")
+
+for(var i =userInput.length; i > 0; i--){
+
+    console.log(userInput.slice(0,i))
+}
+
 // Q20
+// a
+var stars = "*****"
 
+for (var i = 0; i < 5; i++) {
+       console.log(stars , "<br>")
+}
+// b
 
+var star = "*****"
 
-function calc (num1,op,num2){
-    switch(op){
-        case "+":
-        console.log(num1 + num2)
-         break;
-        case "-":
-        console.log(num1 - num2)
-         break;
-        case "*":
-        console.log(num1 * num2) 
-        break;
-        case "/":
-        console.log(num1 / num2) 
-        break;
-    }
+for (var i = 1; i <= star.length; i++){
+    console.log(star.slice(0,i))
 }
 
-function dice (){
-   Math.ceil( Math.random()*6)
-}
- 
-function reverse (userInput){
-    var blank = ' '
-    for (var i = userInput.length;i>=0;i--){
-    blank += userInput[i]
-    }
-console.log(blank)
-return blank
+// c
 
+var star = "*****"
+for (var i = star.length; i > 0; i--){
+    console.log(star.slice(0,i))
 }
-
-function reverse (userInput){
-    var blank = ''
-        for (var i = userInput.length;i>=0;i--){
-    blank += userInput[i]
-        }
-console.log(blank)
-if(blank === userInput){
-    console.log("done")
-} else{
-console.log("no")
-}
-}
-
-function countVowel (text){
-    for (var i = 0; i<=text.length; i++){
-        var total = 0
-        if (text[i]= "a"){
-            total++
-            break
-        } else  if (text[i]= "e"){
-            total++
-            break
-        } else if (text[i]= "i"){
-            total++
-            break
-        } else if (text[i]= "o"){
-            total++
-            break
-        } else if  (text[i]= "u"){
-            total++
-            break
-        }
-    }
-    console.log(total)
-
-}
-
