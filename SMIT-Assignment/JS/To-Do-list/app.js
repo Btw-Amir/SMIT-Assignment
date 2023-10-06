@@ -35,13 +35,13 @@ var inputElement
 // for update btn
 function updateItem (){
     // input ma jo value aye us ko usi ki jaghe par rakh de
+    var inputElement = document.getElementById('main-input')
     var update = inputElement.value
 console.log(update)
 }
 // for delete All button
 function deleteItem(){
     var listElement = document.getElementById('list')
-console.log(listElement.value) 
-
+listElement.innerHTML= ""
 }
 
