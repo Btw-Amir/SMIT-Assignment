@@ -5,11 +5,12 @@ function cls (){
 
 }
 // for add the elements
+
 function addItem(){
     var inputElement = document.getElementById('main-input')
     var listElement = document.getElementById('list')
     var liElement = document.createElement('li')
-   liElement.innerHTML= "<span>"+inputElement.value +"</span>"+ "<button onclick ='editbtn(event)' class='btn style-btn'> Edit </button>"+ "<button onclick ='dltbtn(event)'class='btn delete-btn'> delete </button>"
+    liElement.innerHTML= "<span >"+inputElement.value +"</span>"+ "<button onclick ='editbtn(event)' class='btn style-btn'> Edit </button>"+ "<button onclick ='dltbtn(event)'class='btn delete-btn'> delete </button>"
     listElement.append(liElement)
     cls()
 }
@@ -20,24 +21,25 @@ console.log(event)
 liElement.remove()
 }
 // for edit btn
+var inputElements
 function editbtn(event){
     var inputElement = document.getElementById('main-input')
 var liElement = event.target.previousSibling
 inputElement.value = liElement.innerHTML
-
 var updatebtn = document.getElementById('update-btn')
 var addbtn = document.getElementById('add-btn')
 
 updatebtn.className ='btn style-btn'
 addbtn.className='hide'
 }
-var inputElement
+console.log(inputElements)
 // for update btn
-function updateItem (){
+function updateItem (event){
     // input ma jo value aye us ko usi ki jaghe par rakh de
     var inputElement = document.getElementById('main-input')
+    console.log(event)
     var update = inputElement.value
-console.log(update)
+    console.log(update)
 }
 // for delete All button
 function deleteItem(){
