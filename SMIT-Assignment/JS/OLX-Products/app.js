@@ -10,13 +10,14 @@ function apiData() {
         var divElement = document.createElement("div");
         divElement.className = 'box'
         var image = document.createElement("img");
-        image.src = product.image;
+        image.src = product.image 
+        
         image.style.width = '100%'
         image.style.height = '100%'
         var title = document.createElement("h3");
         var price = document.createElement("h4");
-        title.innerHTML = product.title;
-        price.innerHTML = product.price;
+        title.innerHTML = "<hr>"+product.title +"<hr>";;
+        price.innerHTML = "Price :" + product.price +"<hr>";
         divElement.append(image)
         divElement.append(title)
         divElement.append(price)
